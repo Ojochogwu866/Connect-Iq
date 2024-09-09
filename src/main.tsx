@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
+import { GettingStarted } from './pages/getting-started.tsx'
 import { Login } from './pages/login.tsx'
 import { Register } from './pages/register.tsx'
 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
 	{
 		path: '/register',
 		element: <Register onRegister={handleRegister} />,
+	},
+	{
+		path: '/getting-started',
+		element: <GettingStarted />,
 	},
 ])
 // eslint-disable-next-line @typescript-eslint/no-unsafe-call

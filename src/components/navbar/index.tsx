@@ -13,7 +13,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 }) => {
 	return (
 		<nav
-			className={`flex flex-col min-w-[300px] items-start justify-start text-left ${className}`}
+			className={`flex min-w-[300px] flex-col items-start justify-start text-left ${className}`}
 			style={style}
 		>
 			<ul className="flex flex-col gap-y-4">

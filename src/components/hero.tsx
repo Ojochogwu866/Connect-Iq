@@ -24,9 +24,9 @@ export const Hero: React.FC<HeroProps> = ({
 	style,
 }) => {
 	const navbarItems = [
-		{ label: 'Getting Started', to: '/gettingstarted' },
+		{ label: 'Getting Started', to: '/getting-started' },
 		{ label: 'Software', to: '/software' },
-		{ label: 'Login', to: 'login' },
+		{ label: 'Login', to: '/login' },
 		{ label: 'Use Cases', to: '/usecases' },
 	]
 

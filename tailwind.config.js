@@ -9,7 +9,7 @@ module.exports = {
 			},
 			animation: {
 				ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
-        'fade-in-up': 'fade-in-up 0.5s ease-out'
+				'fade-in-up': 'fade-in-up 0.5s ease-out',
 			},
 			keyframes: {
 				ping: {
@@ -18,23 +18,23 @@ module.exports = {
 						opacity: '0',
 					},
 				},
-        'fade-in-up': {
-          '0%': {
-            opacity: '0',
-            transform: 'translateY(10px)'
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateY(0)'
-          },
-        }
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)',
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)',
+					},
+				},
 			},
 		},
 	},
-  variants: {
-    extend: {
-      opacity: ['group-hover'],
-    }
-  },
+	variants: {
+		extend: {
+			opacity: ['group-hover'],
+		},
+	},
 	plugins: [],
 }
