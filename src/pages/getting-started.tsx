@@ -1,7 +1,7 @@
 import { FaChartLine, FaCloudUploadAlt, FaCode, FaRocket } from 'react-icons/fa'
+import { Button } from '../components/button'
 import { Footer } from '../components/footer'
 import { Hero } from '../components/hero'
-import { Button } from '../components/button'
 
 const StepCard = ({ icon, title, description }) => (
 	<div className="overflow-hidden rounded-[2px] border-[0.5px] border-purple-100 bg-white shadow-sm">
@@ -86,9 +86,7 @@ export const GettingStarted = () => {
 					</div>
 
 					<div className="mt-16 text-center">
-						<Button variant="secondary">
-							Get Started
-						</Button>
+						<Button variant="secondary">Get Started</Button>
 					</div>
 				</div>
 			</main>
