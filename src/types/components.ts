@@ -3,7 +3,7 @@ export interface BaseProps {
 	style?: React.CSSProperties
 }
 
-export type ButtonVariant = 'primary' | 'secondary' | 'outline'
+export type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'tertiary'
 
 export interface InputProps extends BaseProps {
 	type?: 'text' | 'number' | 'email' | 'password'

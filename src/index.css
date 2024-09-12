@@ -21,3 +21,38 @@
 body {
 	margin: 0;
 }
+
+@keyframes pulse {
+	0%,
+	100% {
+		opacity: 0.1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+}
+
+@keyframes gradient-x {
+	0%,
+	100% {
+		background-size: 200% 200%;
+		background-position: left center;
+	}
+	50% {
+		background-size: 200% 200%;
+		background-position: right center;
+	}
+}
+
+.animate-gradient-x {
+	animation: gradient-x 15s ease infinite;
+}
+
+.animate-pulse-1 { animation: pulse 2.5s ease-in-out infinite; animation-delay: 0s; }
+.animate-pulse-2 { animation: pulse 3s ease-in-out infinite; animation-delay: 0.2s; }
+.animate-pulse-3 { animation: pulse 3.5s ease-in-out infinite; animation-delay: 0.4s; }
+.animate-pulse-4 { animation: pulse 4s ease-in-out infinite; animation-delay: 0.6s; }
+.animate-pulse-5 { animation: pulse 4.5s ease-in-out infinite; animation-delay: 0.8s; }
+.animate-pulse-6 { animation: pulse 5s ease-in-out infinite; animation-delay: 1s; }
+.animate-pulse-7 { animation: pulse 5.5s ease-in-out infinite; animation-delay: 1.2s; }
+.animate-pulse-8 { animation: pulse 6s ease-in-out infinite; animation-delay: 1.4s; }

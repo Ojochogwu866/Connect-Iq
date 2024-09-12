@@ -1,9 +1,16 @@
+import React from 'react'
 import { FaChartLine, FaCloudUploadAlt, FaCode, FaRocket } from 'react-icons/fa'
 import { Button } from '../components/button'
 import { Footer } from '../components/footer'
 import { Hero } from '../components/hero'
 
-const StepCard = ({ icon, title, description }) => (
+interface StepCardProps {
+	icon: React.ReactNode
+	title: string
+	description: string
+}
+
+const StepCard: React.FC<StepCardProps> = ({ icon, title, description }) => (
 	<div className="overflow-hidden rounded-[2px] border-[0.5px] border-purple-100 bg-white shadow-sm">
 		<div className="flex items-center gap-2 bg-purple-50 p-4">
 			<div className="text-base text-purple-600">{icon}</div>
@@ -15,8 +22,8 @@ const StepCard = ({ icon, title, description }) => (
 	</div>
 )
 
-export const GettingStarted = () => {
-	const steps = [
+export const GettingStarted: React.FC = () => {
+	const steps: StepCardProps[] = [
 		{
 			icon: <FaRocket />,
 			title: 'Sign Up for ConnectIQ',
@@ -42,6 +49,11 @@ export const GettingStarted = () => {
 				'Leverage our powerful analytics tools and customizable dashboards to gain actionable insights from your IoT data. From real-time monitoring to predictive analytics, ConnectIQ empowers data-driven decision making.',
 		},
 	]
+
+	const handleGetStarted = () => {
+		// Add your logic here for what should happen when the button is clicked
+		console.log('Get Started button clicked')
+	}
 
 	return (
 		<div className="flex min-h-screen flex-col bg-gray-100">
@@ -86,7 +98,9 @@ export const GettingStarted = () => {
 					</div>
 
 					<div className="mt-16 text-center">
-						<Button variant="secondary">Get Started</Button>
+						<Button variant="secondary" onClick={handleGetStarted}>
+							Get Started
+						</Button>
 					</div>
 				</div>
 			</main>

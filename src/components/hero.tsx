@@ -123,42 +123,6 @@ export const Hero: React.FC<HeroProps> = ({
 					</svg>
 				</div>
 			</div>
-
-			<style jsx>{`
-				@keyframes pulse {
-					0%,
-					100% {
-						opacity: 0.1;
-					}
-					50% {
-						opacity: 0.5;
-					}
-				}
-				@keyframes gradient-x {
-					0%,
-					100% {
-						background-size: 200% 200%;
-						background-position: left center;
-					}
-					50% {
-						background-size: 200% 200%;
-						background-position: right center;
-					}
-				}
-				.animate-gradient-x {
-					animation: gradient-x 15s ease infinite;
-				}
-				${[20, 40, 60, 80, 100, 120, 140, 160]
-					.map(
-						(_, index) => `
-          .animate-pulse-${index + 1} {
-            animation: pulse ${2 + index * 0.5}s ease-in-out infinite;
-            animation-delay: ${index * 0.2}s;
-          }
-        `
-					)
-					.join('\n')}
-			`}</style>
 		</div>
 	)
 }

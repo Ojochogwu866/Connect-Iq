@@ -25,11 +25,31 @@ const router = createBrowserRouter([
 	},
 	{
 		path: '/login',
-		element: <Login onLogin={handleLogin} />,
+		element: (
+			<Login
+				onLogin={handleLogin}
+				onGoogleLogin={function (): void {
+					throw new Error('Function not implemented.')
+				}}
+				onGithubLogin={function (): void {
+					throw new Error('Function not implemented.')
+				}}
+			/>
+		),
 	},
 	{
 		path: '/register',
-		element: <Register onRegister={handleRegister} />,
+		element: (
+			<Register
+				onRegister={handleRegister}
+				onGoogleRegister={function (): void {
+					throw new Error('Function not implemented.')
+				}}
+				onGithubRegister={function (): void {
+					throw new Error('Function not implemented.')
+				}}
+			/>
+		),
 	},
 	{
 		path: '/getting-started',

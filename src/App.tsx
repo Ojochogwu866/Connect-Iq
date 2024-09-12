@@ -1,9 +1,5 @@
 import React from 'react'
-import {
-	Element,
-	Link as ScrollLink,
-	animateScroll as scroll,
-} from 'react-scroll'
+import { Element, scroller, Link as ScrollLink } from 'react-scroll'
 import { Architecture } from './components/architecture'
 import { Features } from './components/features'
 import { Footer } from './components/footer'
@@ -45,7 +41,7 @@ const featuresData: Feature[] = [
 
 const App: React.FC = () => {
 	const handleCtaClick = () => {
-		scroll.scrollTo('features', {
+		scroller.scrollTo('features', {
 			duration: 800,
 			smooth: 'easeInOutQuart',
 		})
